@@ -1,8 +1,5 @@
 local Skynet    = require "skynet"
 
-local tpack     = table.pack
-local tunpack   = table.unpack
-
 local NS_PER_MS  = 1000000
 local NS_PER_SEC = 1000000000
 
@@ -87,7 +84,6 @@ return {
     ns2sec = ns2sec,
 
     runit = runit,
-    parunit = parunit,
     delta = delta,
     gather = gather,
 

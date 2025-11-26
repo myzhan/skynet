@@ -11,7 +11,7 @@ function Command.run(args)
     return T.results()
 end
 
--- 每个
+-- 每批用例单独一个 lua 虚拟机
 Skynet.start(function ()
     math.randomseed(0)
     Skynet.dispatch("lua", function (_, _, cmd, ...)
