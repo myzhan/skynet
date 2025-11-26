@@ -1,3 +1,11 @@
+## 注意
+这是一个临时仓库，用于对比测试 gcc 和 intel-icx 两种编译器下，skynet 的运行性能。
+
+```bash
+$ bash ./benchmark/test_with_gcc.sh
+$ bash ./benchmark/test_with_icx.sh
+```
+
 ## ![skynet logo](https://github.com/cloudwu/skynet/wiki/image/skynet_metro.jpg)
 
 Skynet is a multi-user Lua framework supporting the actor model, often used in games.

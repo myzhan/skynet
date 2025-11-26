@@ -1,0 +1,17 @@
+root = "./"
+luaservice = root.."service/?.lua;"..root.."benchmark/service/?.lua;"
+lualoader = root .. "lualib/loader.lua"
+lua_path = root.."lualib/?.lua;"..root.."lualib/?/init.lua;"..root.."benchmark/service/cases/?.lua;"
+lua_cpath = root .. "luaclib/?.so"
+snax = root.."benchmark/service/?.lua;"
+
+thread = 8
+-- "skynet自身日志写到文件"
+logger = "skynet.log"
+-- logger = nil
+logpath = "."
+harbor = 0
+address = "127.0.0.1:2526"
+start = "main"	-- main script
+bootstrap = "snlua bootstrap"	-- The service for bootstrap
+cpath = root.."cservice/?.so"

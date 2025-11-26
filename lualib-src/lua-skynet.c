@@ -495,6 +495,11 @@ ltrace(lua_State *L) {
 	return 0;
 }
 
+static int
+ldummy(lua_State *L) {
+    return 0;
+}
+
 LUAMOD_API int
 luaopen_skynet_core(lua_State *L) {
 	luaL_checkversion(L);
@@ -510,6 +515,7 @@ luaopen_skynet_core(lua_State *L) {
 		{ "harbor", lharbor },
 		{ "callback", lcallback },
 		{ "trace", ltrace },
+		{ "dummy", ldummy },
 		{ NULL, NULL },
 	};
 
