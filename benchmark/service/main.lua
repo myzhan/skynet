@@ -2,7 +2,8 @@ local Skynet = require "skynet"
 require "skynet.manager"
 local sformat = string.format
 
-local testcases = {"lua_forloop", "lua_arrayinsertion", "lua_capi", "lua_tobeclose"}
+local testcases = {"lua_forloop", "lua_arrayinsertion", "lua_capi", "lua_tobeclose", "lua_calc", "lua_gc", "lua_stringconcat", "lua_traceback",
+                   "skynet_luamsg", "skynet_sprotomsg"}
 -- testcases = {"lua_tobeclose"}
 
 local function print_result(result)

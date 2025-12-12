@@ -2,5 +2,5 @@
 
 make clean
 make cleanall
-make linux
+make macosx
 ./skynet ./benchmark/etc/config
